@@ -49,7 +49,7 @@ hr {
     font-size: 22px;
 }
 .jumbotron {
-    background-image: url("images/sun2.jpg");
+    background-image: url("../images/sun2.jpg");
     background-size: cover;
 }
 #mercury {
