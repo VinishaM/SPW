@@ -1,24 +1,21 @@
 html,body {
-    background-color: black;
+    margin:0;
+    padding: 0;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url("../images/galactic.jpg");
+    background-size:cover;
 }
-.container-fluid {
-    padding-top: 7%;
-    width: 100% !important;
-    margin: 0;
-}
-.jumbotron {
-    color: white;
-    height: 35% !important;
-}
-.hero-spacer {
-    padding: 2%;
-    padding-top: 15%;
-    padding-bottom: 5%;
-}
-.hero-feature {
-    margin-bottom: 30px;
+body {
+    height: 100%;
 }
 footer {
+    bottom: 0;
     margin: 50px 0;
 }
 hr {
@@ -30,53 +27,143 @@ hr {
     margin:0;
 }
 .container2 {
-    background-color: white;
+    left:0;
+    right:0;
+    background: rgba(255, 255,255, .25);
     margin: 2%;
     margin-bottom: 0;
     padding: 1%;
     padding-top:0;
-    border-radius: 10px;
-    margin-top: -50px;
-}
+    color: white;
+    margin-top:0;
+}   
 .thumbnail {
     margin: 1% !important;
+    margin-bottom: 5% !important;
     text-align: left;
+    background-color: rgba(255, 255,255, .8);
+    border-radius: 12px;
 }
 .thumbnail i {
     font-size: 1.2em;
 }
-.thumbnail span {
+.thumbnail span {   
     font-size: 22px;
 }
-.jumbotron {
+.header2 {
+    padding-top: 20%;
+    margin-bottom: 0;
+    margin-top:0;
     background-image: url("../images/sun2.jpg");
     background-size: cover;
+    z-index: 1px;
+    box-shadow: 0px 5px 23px rgba(0, 0, 0, 1);
+    margin: 0;
+}
+.header2 h1 {
+    color: white;
+    padding: 1%;
+    padding-left: 4%;
+    margin-bottom: 0;
 }
 #mercury {
     size: .4em;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
-.navbar .nav {
-    margin: 0;
-    display: table;
+.container-fluid {
+    margin:0px !important;
+    padding:0px !important;
+}
+.navbar-custom {
+    margin:0;
     width: 100%;
 }
-
-.navbar .nav li {
+.navbar-sm .nav{
+    margin: 0;
+    margin-top: 2%;
+    display: table;
+    width: 100%;
+    background:rgba(255, 255,255, .25);
+    ) !important;
+}
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-collapse > ul {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.navbar-header {
+    margin: 0;
+    margin-top: 15px;
+    padding-right: 10px;
+    background-color:rgba(255, 255,255, .25)
+}
+.navbar-sm .nav li {
     display: table-cell;
     float: none;
     vertical-align: bottom;
 }
+.navbar-sm .nav li:hover, .navbar .nav li:focus {
+    background-color: none !important;
+}
 
-.navbar .nav li a {
-    padding:0;
+.navbar-sm .nav li a {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left:2px;
+  	padding-right:2px;
+    padding-top:15px;
+    padding-bottom:7px;
+    color: white;
     font-weight: bold;
     text-align: center;
+    border-radius: 5px;
 }
-.name {
-    margin-top: 3%;
+.navbar-sm .nav li a:hover, .navbar .nav li a:focus {
+    background: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.1)
+    );
 }
-#sat {
-    margin-top: 0;
+.active {
+    border-radius: 5px; 
+    background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.1), 
+      rgba(255, 255, 255, 0.3)
+    ) !important;
 }
+.navbar-sm button {
+    background-color: rgba(255, 255,255, .40);
+}
+.navbar-sm button span {
+    background-color: white;
+}
+.dropdown ul {
+    color: none;
+    display: black ;
+    background-color: rgba(255, 255,255, .20);
+}
+
+.open > a {
+    color: white !important;
+    background:linear-gradient(
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.1)
+    ) !important;
+}  
+#banner {
+    padding: 6.5%;
+    background-image: url("../images/SPIF%20Banner%20White-01.png");
+    background-size: cover;
+    background-color: transparent;
+}   
+#content {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
