@@ -1,4 +1,4 @@
-html,body {
+body {
     margin:0;
     padding: 0;
     background: 
@@ -9,7 +9,9 @@ html,body {
     ),
     /* bottom, image */
     url("../images/galactic.jpg");
-    background-size:cover;
+    /*url("../images/flamingstar_pugh_2666.jpg");
+*/
+    background-size: cover;
 }
 body {
     height: 100%;
@@ -32,7 +34,7 @@ hr {
     background: rgba(255, 255,255, .25);
     margin: 2%;
     margin-bottom: 0;
-    padding: 1%;
+    padding: 0%;
     padding-top:0;
     color: white;
     margin-top:0;
@@ -50,8 +52,14 @@ hr {
 .thumbnail span {   
     font-size: 22px;
 }
+.thumbnail h4 {
+    text-align: center;
+}
+.thumbnail h3 {
+    margin-top: 1%;
+}
 .header2 {
-    padding-top: 20%;
+    padding-top: 13%;
     margin-bottom: 0;
     margin-top:0;
     background-image: url("../images/sun2.jpg");
@@ -59,9 +67,10 @@ hr {
     z-index: 1px;
     box-shadow: 0px 5px 23px rgba(0, 0, 0, 1);
     margin: 0;
+    color: white;
 }
 .header2 h1 {
-    color: white;
+    color: wh   ite;
     padding: 1%;
     padding-left: 4%;
     margin-bottom: 0;
@@ -98,7 +107,7 @@ hr {
 .navbar-header {
     margin: 0;
     margin-top: 15px;
-    padding-right: 10px;
+    height: 40px;
     background-color:rgba(255, 255,255, .25)
 }
 .navbar-sm .nav li {
@@ -115,12 +124,12 @@ hr {
     margin-right: 3px;
     padding-left:2px;
   	padding-right:2px;
-    padding-top:15px;
-    padding-bottom:7px;
+    padding-top:12px;
+    padding-bottom:12px;
     color: white;
     font-weight: bold;
     text-align: center;
-    border-radius: 5px;
+    
 }
 .navbar-sm .nav li a:hover, .navbar .nav li a:focus {
     background: 
@@ -130,7 +139,6 @@ hr {
     );
 }
 .active {
-    border-radius: 5px; 
     background:
     linear-gradient(
       rgba(255, 255, 255, 0.1), 
@@ -138,6 +146,12 @@ hr {
     ) !important;
 }
 .navbar-sm button {
+    margin-top:5px;
+    margin-bottom:0;
+    padding-top: 7px;
+    padding-left: 7.25px;
+    height: 30px;
+    width: 38px;
     background-color: rgba(255, 255,255, .40);
 }
 .navbar-sm button span {
@@ -145,25 +159,151 @@ hr {
 }
 .dropdown ul {
     color: none;
-    display: black ;
-    background-color: rgba(255, 255,255, .20);
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgba(255, 255,255, .40);
+}
+.dropdown li {
+    display: block !important;
 }
 
+.navbar-collapse.in {
+    display: block;
+    width: 100% !important;
+    margin:0;
+    padding:0;
+}
 .open > a {
     color: white !important;
     background:linear-gradient(
-      rgba(255, 255, 255, 0.3), 
-      rgba(255, 255, 255, 0.1)
+      rgba(255, 255, 255, 0.1), 
+      rgba(255, 255, 255, 0.3)
     ) !important;
-}  
+} 
+footer {
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    color: white;
+    background-color: rgba(255, 255, 255, .25);
+    text-align: left;
+}
+footer h2 {
+    padding-left: 2%;
+}
+.map-holder {
+    text-align: center;
+}
+.foot > .row {
+    margin: 0;
+    padding: 0;
+}
+.info p {
+    text-align: left;
+}
 #banner {
+    margin-top: 1%;
     padding: 6.5%;
-    background-image: url("../images/SPIF%20Banner%20White-01.png");
-    background-size: cover;
+    background-image: url("../images/SCBanner.png");
+    background-size: contain;
     background-color: transparent;
+    margin-bottom: -1.5%;
 }   
 #content {
     padding-left: 2%;
     padding-right: 2%;
 }
-
+.row {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
+    vertical-align: center;
+}
+.img-fluid {
+    margin: 10px;
+    border: 3px solid white;
+    width: 100%;
+    height: auto;
+    
+}
+.col-sm-4 {     
+    text-align: center !important;
+}
+#profile {
+    padding: 2%;
+    margin-top: 1%;
+    border: 3px solid white;
+}
+#profile > h3 {
+    margin-top: 2%;
+    text-align: left;
+}
+#profile ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+#profile li {
+    text-align: left;
+    text-decoration: none;
+}
+.map-holder {
+    width: 100%;
+    height: 250px;
+}
+.img1 {
+    float:right;
+}
+.img2 {
+    float: left;
+}
+@media (min-width: 769px) {
+    #content {
+        width: 
+    }
+    .fRow {
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-collapse {
+        padding-left: 15px;
+    }
+    .container-fluid > .navbar-header {
+        margin-right:0;
+    }
+    .navbar-sm .nav {
+        margin-top: 0;
+    }
+    .dropdown-menu li {
+        display: block;
+        background-color: rgba(255, 255,255, .20);
+    }
+    .dropdown ul {
+    color: none;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: rgba(255, 255,255, .40);
+    }
+    .navbar-sm li {
+        margin:0;
+        display: block !important;
+        border-bottom: 1px solid rgba(255, 255,255, .3);
+    }
+    #banner {
+        margin-bottom: -2%;
+    }
+    ._brackets-ld-highlight {
+        width:0;
+    }
+    .active, .actvie:hover, .active:focus {
+        border-radius: 0px !important;
+    }
+}
+@media (max-width: 600px) {
+    .map-holder {
+    width: 100%;
+    height: 200px;
+    }
+}
