@@ -1,28 +1,41 @@
-body {
+ #pages {
     margin:0;
     padding: 0;
+    height: 100%;
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.5)
     ),
-    /* bottom, image */
-    url("../images/galactic.jpg");
-    /*url("../images/flamingstar_pugh_2666.jpg");
-*/
+    url("../images/galactic2.jpg");
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Raleway";
 }
-body {
+#landing {
+    margin:0;
+    padding: 0;
     height: 100%;
-}
-footer {
-    bottom: 0;
-    margin: 50px 0;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/header2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Raleway";
 }
 hr {
     padding:0;
     margin:0;
+}
+h2 {
+    font-family: "Cinzel"
 }
 .row {
     padding: 0;
@@ -38,25 +51,6 @@ hr {
     padding-top:0;
     color: white;
     margin-top:0;
-}   
-.thumbnail {
-    margin: 1% !important;
-    margin-bottom: 5% !important;
-    text-align: left;
-    background-color: rgba(255, 255,255, .8);
-    border-radius: 12px;
-}
-.thumbnail i {
-    font-size: 1.2em;
-}
-.thumbnail span {   
-    font-size: 22px;
-}
-.thumbnail h4 {
-    text-align: center;
-}
-.thumbnail h3 {
-    margin-top: 1%;
 }
 .header2 {
     padding-top: 13%;
@@ -65,7 +59,7 @@ hr {
     background-image: url("../images/sun2.jpg");
     background-size: cover;
     z-index: 1px;
-    box-shadow: 0px 5px 23px rgba(0, 0, 0, 1);
+    box-shadow: 0px 1px 23px rgba(0, 0, 0, 1);
     margin: 0;
     color: white;
 }
@@ -74,9 +68,14 @@ hr {
     padding: 1%;
     padding-left: 4%;
     margin-bottom: 0;
+    font-family: "Cinzel";
 }
 #mercury {
     size: .4em;
+}
+ul {
+    list-style-type: decimal;
+    padding-left: 4%;
 }
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
@@ -181,6 +180,8 @@ hr {
     ) !important;
 } 
 footer {
+    bottom: 0;
+    margin: 50px 0;
     margin-bottom: 0;
     padding-bottom: 1%;
     color: white;
@@ -219,51 +220,241 @@ footer h2 {
     margin-right: 2%;
     vertical-align: center;
 }
-.img-fluid {
-    margin: 10px;
-    border: 3px solid white;
+img {
     width: 100%;
     height: auto;
-    
+    border: 2px solid white;
 }
 .col-sm-4 {     
     text-align: center !important;
 }
-#profile {
-    padding: 2%;
-    margin-top: 1%;
-    border: 3px solid white;
-}
-#profile > h3 {
-    margin-top: 2%;
-    text-align: left;
-}
-#profile ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-}
-#profile li {
-    text-align: left;
-    text-decoration: none;
-}
+
 .map-holder {
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
-.img1 {
-    float:right;
+
+button {
+    padding: 1%;
+    font-size: 1.3em;
+    color: black !important;
+    margin-left: 1%;
+    margin-right: 1%;
 }
-.img2 {
-    float: left;
+.buttons{
+    padding-top: 1%;
+    text-align: center;
+}
+.buttons a {
+    color:#3D1E5B;
+}
+.pics {
+    margin: 0;
+    padding: 0;
+    padding-top: 1%;
+    padding-left: 1%;
+    vertical-align: bottom;
+}
+#missions {
+    padding: 0% !important;
+    margin: 2% auto;
+    padding: 2% auto;
+}
+.btn-primary {
+    color: #fff;
+    background-color:#3D1E5B;
+    border-color: #241236;
+}
+.btn-primary:hover  {
+    color: #fff;
+    background-color:#301848;
+    border-color: #301848;
+}
+.thumbnail {
+    border: 3px solid rgba(225,255,255, .6);
+    background-color: rgba(225,255,255, .2) !important;
+}
+.thumbnail p, .thumbnail h4, .thumbnail h5 {
+    color: white !important;
+}
+.thumbnail h4 {
+    border-bottom: 1px dashed white;
+}
+.img-group{
+	display: flex;
+}
+.imgCont1 {
+    padding: 1%;
+    flex: 1.0;
+}
+.imgCont2 {
+    padding: 1%;
+    flex: 1.0;
+}
+.prof {
+    margin-top: 4%; 
+    padding-bottom: 1%;
+}
+.prof li {
+    text-align: left;
+    text-decoration: none;
+    padding: 1%;
+}
+.prof ul {
+    text-decoration: none;
+    list-style: none;
+    padding-bottom: 6%;
+   
+}
+.prof b {
+    color:#3D1E5B;
+}
+.headers {
+    margin-top: 0 !important;
+    text-align: center;
+    padding-top: 3%;    
+    background-color:#3D1E5B;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 5px 23px rgba(0, 0, 0, 1);
+}
+
+.slide {
+   color: rgba(0,0,0,1) !important;
+    margin-left: 2%;
+}
+
+.slide b {
+    color: #3D1E5B;
+    
+}
+.more {
+    font-size: 1.3em;
+}
+.need2know, .prof, .more, #missions, .hist {
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, .3);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 1.5em;
+    padding: 0;
+}
+.hist h2 {
+    margin-top: 0px !important;
+}
+.hist {
+    margin-top:  0;
+    margin-left: 1.7em;
+    margin-right: 1.7em;
+}
+.hist p {
+    margin-top: 2em;
+}
+#moreInner {
+    padding: 3%;
+}
+
+.more b, .hist b {
+    color:#3D1E5B;
+}
+table {
+    width: 100%;
+    text-align: justify;
+    background-color: rgba(255, 255,255, .10);
+    border: 2px solid rgba(255, 255,255, .20);  
+}
+table th {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(255, 255,255, .20);
+    border-bottom: 2px solid rgba(255, 255,255, .20);
+}
+table td {
+    padding-top: .5%;
+    padding-left: .5%;
+    text-align: center;
+    border-right: 2px solid rgba(255, 255,255, .20);
+    border-left: 2px solid rgba(255, 255,255, .20);
+}
+#missions p {
+    padding-right: 3px;
+}
+#missions b {
+    font-size: 1.2em;
+}
+
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin: 1.5em;
+}
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .1em;
+    margin: .4em 0;
+    border: 1px solid rgba(255,255,255, .9);
+    color: white;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+    
+}
+
+.rounded-list a:hover{
+    background: rgba(255,255,255,.2);
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #3D1E5B;
+    height: 2em;
+    width: 2em;
+    line-height: 1.5em;
+    border: .18em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    color: white;
+}
+
+.img-holder {
+    padding: 2%;
+}
+
+.bx-wrapper {
+    margin: 0 auto 9%;
+}
+
+.bxslider {
+    list-style:none;
+    margin:0;
+    padding:0
 }
 @media (min-width: 769px) {
     #content {
-        width: 
+        width:  !important;
     }
     .fRow {
         padding-left: 1%;
         padding-bottom: 1%;
+    }
+    .navbar-sm .nav {
+        font-size: 1.1em;
+    }
+    .hist p {
+        margin-top: 1em;
     }
 }
 @media (max-width: 768px) {
@@ -281,10 +472,10 @@ footer h2 {
         background-color: rgba(255, 255,255, .20);
     }
     .dropdown ul {
-    color: none;
-    padding-left: 0%;
-    padding-right: 0%;
-    background-color: rgba(255, 255,255, .40);
+        color: none;
+        padding-left: 0%;
+        padding-right: 0%;
+        background-color: rgba(255, 255,255, .40);  
     }
     .navbar-sm li {
         margin:0;
@@ -300,10 +491,40 @@ footer h2 {
     .active, .actvie:hover, .active:focus {
         border-radius: 0px !important;
     }
+    .hist p {
+        margin-top: 1.3em;
+    }
 }
 @media (max-width: 600px) {
+    .prof li, .need2know, .more,  {
+        font-size: .9em;
+    }
+    button {
+        font-size: .9em;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .need2know {
+        padding-bottom: 1.4%;
+        margin-top: 2% !important;
+    }
+    .headers {
+        margin-top: 2% !important;
+        width:100%;
+        font-size: 1.2em;
+    }
     .map-holder {
     width: 100%;
-    height: 200px;
+    height: 150px;
+    }    
+    #mission {
+    padding-left: 2px;
+    padding-right: 2px
+    }
+    table {
+        font-size: .8em;
+    }
+    .hist p {
+        margin-top: 1em;
     }
 }
