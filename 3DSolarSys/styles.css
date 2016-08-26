@@ -11,12 +11,11 @@
   Licensed under the MIT license
 */
 #holder {
-    padding-top: 9%;
     width: 100%;
     height: 80%;
     background: rgba(0,0,0,0);
 }
- div, span, applet, object, iframe, h1, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -1193,14 +1192,14 @@ h1 span, #navbar h1 a {
   height: 48px; }
 
 #navbar2 {
-  top: 80%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0px;
   text-align: right;
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  font-size: 1em;
   width: 100%;
-  height: 20px; }
+  height: 10px; }
 
 #navbar2 a {
   color: white;
@@ -1463,7 +1462,6 @@ h1 {
 /* nav */
 nav {
     z-index: 99;
-    padding-top: 37% !important;
 }
 .navbar-sm .nav li a {
     font-size: 1.5em;
@@ -1477,39 +1475,57 @@ nav {
 -moz-box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
 box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
 }
+.why  {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 3em;   
+    }
+    .passport {
+        font-weight: normal;
+}
 @media screen and (max-width: 299px) {
   #data {
     bottom: 75%;
   }
   #holder {
-    height: 25%;
+    height: 18%;
     }
   #universe {
-    font-size: 20%; } }
+    font-size: 20%; } 
+}
 @media screen and (min-width: 300px) {
   #data {
     bottom: 75%;
   }
   #holder {
-    height: 25%;
+    height: 20%;
   }
   #universe {
-    font-size: 24%; } }
+    font-size: 24%; }
+  .container2 h2 {
+        font-size: .9em;
+    }
+    .container2 p {
+        font-size: .70em;
+    }
+   
+    }
 @media screen and (min-width: 500px) {
   #data {
     bottom: 67%;
   }
   #holder {
-    height: 33%;
+    height: 30%;
   }
   #universe {
-    font-size: 36%; } }
+    font-size: 36%; } 
+    }
 @media screen and (min-width: 600px) {
   #data {
     bottom: 55%;
   }
   #holder {
-    height: 45%;
+    height: 30%;
   }
   #universe {
     font-size: 44%; } }
@@ -1518,15 +1534,24 @@ box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
     bottom: 40%;
   }
   #holder {
-    height: 60%;
+    height: 40%;
   }
   #universe {
     font-size: 58%; 
     }}
     
+@media screen and (min-width: 768px) {
+    .container2 h2 {
+        font-size: 1em;
+    }
+    
+    .container2 p {
+        font-size: .8em;
+    }
+}
 @media screen and (min-width: 1000px) {
   #holder {
-    height: 70%;
+    height: 30%;
   }
   #universe {
     font-size: 73%; }
@@ -1567,7 +1592,15 @@ box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
     bottom: 30%;
   }
     }
+@media screen and (min-width: 1100px) {
+  #holder {
+    height: 50%;
+  }
+    
 @media screen and (min-width: 1300px) {
+  #holder {
+    height: 55%;
+  }
   #universe {
     font-size: 100%; } }
 @media screen and (min-width: 1600px) {

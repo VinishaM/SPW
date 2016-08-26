@@ -8,11 +8,6 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'Agenda';
-    src: url('../fonts/Agenda/Agenda-Semibold.otf') format("opentype");
-    font-style: bold;
-}
-@font-face {
     font-family: 'Caecilia' ;
     src: url('../fonts/Caecilia/Caecilialtstd-light.otf') format("opentype");
 }
@@ -23,7 +18,10 @@ em {
 
 body {
     font-family: 'Agenda', sans-serif !important;
-    font-size:16px;
+    font-weight: normal !important;
+}
+h2  {
+    font-size: 30px;
 }
 #pages {
     margin:0;
@@ -82,7 +80,7 @@ hr {
     margin-bottom: 0;
     padding: 0%;
     padding-top:0;
-    color: white;
+    color: white !important;
     margin-top:0;
 }
 .header2 {
@@ -231,7 +229,7 @@ footer h2 {
     font-weight: normal;
 }
 footer p {
-    font-size: 16px;
+    font-size: 18px;
 }
 .map-holder {
     text-align: center;
@@ -240,6 +238,7 @@ footer p {
     margin: 0;
     padding: 0;
 }
+
 .info p {
     text-align: left;
 }
@@ -249,7 +248,7 @@ footer p {
 .info .label {
     padding-right: 7px;
 }
-#banner {
+#banner, .head {
     margin-top: 1%;
     padding: 6.5%;
     background-image: url("../images/SCBanner.png");
@@ -257,6 +256,10 @@ footer p {
     background-color: transparent;
     margin-bottom: -1.5%;
 }   
+.head {
+    z-index: -5;
+    background-image: url("../images/SPIFBannerMini.png");
+}
 #content {
     padding-left: 2%;
     padding-right: 2%;
@@ -396,6 +399,11 @@ button {
     border-radius: 1.5em;
     padding: 0;
 }
+
+.need2know p, .prof p, .more p, #moreInner p, #missions p, .hist p, .desc p, .blah p{
+    font-size: 1.2em;
+}
+
 .hist h2 {
     margin-top: 0px !important;
 }
@@ -525,6 +533,8 @@ ol {
 
 /*home page*/
 #title {
+    height: 170px;
+    padding-top: 1em;
     z-index: 99;
     position: absolute;
     height: 150px;
@@ -539,7 +549,6 @@ ol {
     color: white;
     padding-right: .5em;
     padding-left: .5em;
-    font-size: 30px;
     font-family: 'Caecilia', sans-serif;
 }
 .intro h1 {
@@ -576,32 +585,101 @@ ol {
     padding-top: 1em;
 }
 
-@media (min-width: 769px) {
-    #content {
-        width:  !important;
+#navHolder {
+    padding-top: 35%;
+}
+
+/* responsive design */
+@media screen and (max-width: 299px) {
+    .prof li, .need2know, .more,  {
+        font-size: .9em;
     }
-    .fRow {
-        padding-left: 1%;
-        padding-bottom: 1%;
+    button {
+        font-size: .9em;
+        margin-left: 1px;
+        margin-right: 1px;
     }
-    .navbar-sm .nav {
-        font-size: 1.1em;
+    .need2know {
+        padding-bottom: 1.4%;
+        margin-top: 2% !important;
+    }
+    .headers {
+        margin-top: 2% !important;
+        width:100%;
+    }
+    .map-holder {
+    width: 100%;
+    height: 150px;
+    }    
+    #mission {
+    padding-left: 2px;
+    padding-right: 2px
+    }
+    table {
+        font-size: .8em;
     }
     .hist p {
         margin-top: 1em;
     }
-    .navbar-header {
-    margin-right: 0px !important;
-    margin-left: -1px !important;
+    #title {
+        height: 80px;
+        padding-left: 30%;
+    }
+     .info {
+        padding-top: 1em;
+    }
+    .info p {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.1em !important;
     }
 }
-@media (max-width: 1000px) {
+@media screen and (min-width: 300px) {
+     .info {
+        padding-top: 1em;
+    }
+    .info p {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 500px) {
+}
+@media screen and (min-width: 600px) { 
+    #title {
+        height: 80px;
+        padding-left: 30%;
+    }
+    .intro h2 {
+        font-size: 26px;
+    }
+    .buttons a {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 650px) { 
+    #title {
+        height: 80px;
+        padding-left: 30%;
+    }
+}
+@media screen and (min-width: 700px) { 
     #title {
         height: 100px;
-        padding-left: 31%;
+        padding-left: 30%;
+    }
+    
+}
+@media screen and (min-width: 760px) {
+    .hist p {
+        margin-top: 1.3em;
+    }
+     #title {
+        height: 100px;
+        padding-left: 30%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-collapse {
         padding-left: 15px;
     }
@@ -626,7 +704,7 @@ ol {
         display: block !important;
         border-bottom: 1px solid rgba(255, 255,255, .3);
     }
-    #banner {
+    #banner, .head {
         margin-bottom: -2%;
     }
     ._brackets-ld-highlight {
@@ -635,59 +713,63 @@ ol {
     .active, .actvie:hover, .active:focus {
         border-radius: 0px !important;
     }
-    .hist p {
-        margin-top: 1.3em;
-    }
-     #title {
-        height: 100px;
-        padding-left: 30%;
-    }
 }
-
-@media (max-width: 700px) {
+@media screen and (min-width: 768px) {
     #title {
-        height: 80px;
-        padding-left: 30%;
+        height: 100px;
+        padding-left: 36%;
     }
-}
-
-@media (max-width: 600px) {
-    .prof li, .need2know, .more,  {
-        font-size: .9em;
+    #content {
+        width:  !important;
     }
-    button {
-        font-size: .9em;
-        margin-left: 1px;
-        margin-right: 1px;
+    .fRow {
+        padding-left: 1%;
+        padding-bottom: 1%;
     }
-    .need2know {
-        padding-bottom: 1.4%;
-        margin-top: 2% !important;
-    }
-    .headers {
-        margin-top: 2% !important;
-        width:100%;
-        font-size: 1.2em;
-    }
-    .map-holder {
-    width: 100%;
-    height: 150px;
-    }    
-    #mission {
-    padding-left: 2px;
-    padding-right: 2px
-    }
-    table {
-        font-size: .8em;
+    .navbar-sm .nav {
+        font-size: 1.1em;
     }
     .hist p {
         margin-top: 1em;
     }
-    #title {
-        height: 80px;
-        padding-left: 30%;
+    .navbar-header {
+        margin-right: 0px !important;
+        margin-left: -1px !important;
+    }
+    .headers p {
+        font-size: 1em !important;
     }
 }
-
+@media screen and (min-width: 1000px) {
+    #title {
+        padding-left: 29%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #title {
+        padding-left: 34%;
+    }
+     .info {
+        padding-top: 0em;
+    }
+    .info p {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #title {
+        padding-left: 34%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .intro h2 {
+        font-size: 30px;
+    }
+    .intro p {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 1800px) {
+}
 
 
