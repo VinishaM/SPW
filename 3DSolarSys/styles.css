@@ -1510,25 +1510,35 @@ box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
     }
    
     }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 430px) {
+  #holder {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 530px) {
   #data {
     bottom: 67%;
   }
   #holder {
-    height: 30%;
+    height: 40%;
   }
   #universe {
     font-size: 36%; } 
     }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 630px) {
   #data {
     bottom: 55%;
   }
   #holder {
-    height: 30%;
+    height: 45%;
   }
   #universe {
     font-size: 44%; } }
+@media screen and (min-width: 700px) {
+  #holder {
+    height: 45%;
+  }
+}
 @media screen and (min-width: 760px) {
   #data {
     bottom: 40%;
@@ -1551,7 +1561,7 @@ box-shadow: 0px 18px 20px -6px rgba(0,0,0,0.75);
 }
 @media screen and (min-width: 1000px) {
   #holder {
-    height: 30%;
+    height: 48%;
   }
   #universe {
     font-size: 73%; }
