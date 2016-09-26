@@ -499,6 +499,9 @@ ol {
 
 .img-holder {
     padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .bx-wrapper {
@@ -604,13 +607,13 @@ ol {
     margin-bottom: 2em;
     padding-bottom: 1em;
 }
-.inner2 p {
-    padding-left: 30px;
-    padding-right: 30px;
-}
 .noSideMargin {
     margin-left: 0px !important;
     margin-right: 0px !important;
+}
+.noSidePadding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 form {
     margin: 1em;
@@ -618,8 +621,27 @@ form {
 .alert {
     margin-bottom: 1em;
 }
+
+#sagan img {
+    height: 10em;
+    width: 10em;
+    border-radius: 10000px;
+}
 /* responsive design */
 @media screen and (max-width: 299px) {
+    .row {
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+    #sagan img {
+        height: 7em;
+        width: 7em;
+        border-radius: 10000px;
+    }
+    .desc .block {
+        padding-top: .7em !important;
+        padding: .8em;
+    }
     .prof li, .need2know, .more,  {
         font-size: .9em;
     }
@@ -665,6 +687,19 @@ form {
     }
 }
 @media screen and (min-width: 300px) {
+    .row {
+        margin-left: .6em;
+        margin-right: .6em;
+    }
+    #sagan img {
+        height: 6em;
+        width: 6em;
+        border-radius: 10000px;
+    }
+    .desc .block {
+        padding-top: .7em !important;
+        padding: .8em;
+    }
      .info {
         padding-top: 1em;
     }
@@ -702,6 +737,10 @@ form {
     #title {
         height: 100px;
         padding-left: 30%;
+    }
+    .inner2 p {
+    padding-left: 30px;
+    padding-right: 30px;
     }
     
 }
@@ -750,6 +789,19 @@ form {
     }
 }
 @media screen and (min-width: 768px) {
+    .row {
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    #sagan img {
+        height: 9em;
+        width: 9em;
+        border-radius: 10000px;
+    }
+    .desc .block {
+        padding-top: .9em !important;
+        padding: 1em;
+    }
     #title {
         height: 100px;
         padding-left: 36%;
@@ -797,6 +849,11 @@ form {
     }
 }
 @media screen and (min-width: 1400px) {
+    #sagan img {
+        height: 7.5em;
+        width: 7.5em;
+        border-radius: 10000px;
+    }
     #title {
         padding-left: 34%;
     }

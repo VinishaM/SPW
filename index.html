@@ -251,6 +251,29 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class='row intro'>
+            <div class="col-sm-12">
+                <div class='desc'>
+                    <h2 class="headers">Carl Sagan</h2>
+
+                    <div class='block'>
+                        <div class='row noSideMargin'>
+                          <div class="col-md-4 noSidePadding" align="center">
+                              <div id='sagan'>
+                                  <img id="img3" src="images/Carl_Sagan.jpg">
+                              </div>
+                          </div>
+                          <div class="col-md-8 noSidePadding">
+                              <p>Carl Sagan was Professor of Astronomy and Space Sciences and Director of the Laboratory for Planetary Studies at Cornell University. He was heavily involved in the American space program, from breifing Apollo astronauts before their Moon flights, to leading experiments on the Mariner, Viking, Voyager, and Galileo expeditions, and investigating mysteries like Titan red haze.</p>
+
+                              <p>He was a strong advocate of the sciences and a great supporter of the Sciencenter, as well as prominent memeber of the Ithaca community for more than 30 years. We name the planet walk in Carl Sagan's honor in the hopes of continuing his mission to excite future generations about the romance of the scientic enterprise and to convey something of the preciousness and fragility of our tiny world in the context of the vastness of the Cosmos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
     </div>
     
      <!-- Footer -->
@@ -328,6 +351,7 @@
                 map: map,
             });
             
+            //set side by size images to the same height
             function getImgSize(imgSrc1, imgSrc2) {
                 var newImg1 = new Image();
                 var newImg2 = new Image();
@@ -355,7 +379,23 @@
             }
             
             getImgSize($('#img3').attr('src'), $('#img4').attr('src'));
-            
+
+            //set image to the height of a column near it 
+            function imitateColSize(img, colId) {
+                var colheight = colId.height();
+
+                var newImg1 = new Image();
+                newImg1.onload = function() {
+                }
+                
+                console.log(colheight);
+                imgholder.css('height', colheight);
+                console.log(imgholder.height());
+
+            }
+
+
+            imitateColSize($('#saganHolder'), $('#sagan'));
         });
         
     </script>

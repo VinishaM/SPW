@@ -142,6 +142,10 @@
             <div class="row">
                 <!--basic links and pictures-->
                 <div class='col-md-6'>
+                    <h1>Ithaca Sciencenter</h1>
+                    <div class='col-sm-12 blah' style="font-size: 1.2em;">
+                        <p>The Sciencenter inspires excitement for science through interactive exhibits and programs that engage, educate and empower. Our non-profit, hands-on museum offers guests of all ages more than 250 exhibits, educational programs, a gift shop, and seasonal outdoor science playground and mini-golf course. Look, touch, listen & discover at the Sciencenter.</p>
+                    </div>
                     <div class="col-sm-12 prof">
                         <h2 class="headers" style="font-size: 1.4em;">Contact Sciencenter</h2>
                         <form class="form-horizontal" role="form" method="post" action="contact.php">
@@ -177,6 +181,10 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <h1>SPIF</h1>
+                    <div class='col-sm-12 blah' style="font-size: 1.2em;">
+                        <p>Sponsored jointly by NASA's Planetary Geology and Geophysics Program and Cornell University, SPIF is one member of the international system of Regional Planetary Image Facilities (RPIFs) which function as libraries for planetary image data and maintain ancillary and associated information about the data, including geologic maps and mission documentation.</p>
+                    </div>
                     <div class="col-sm-12 prof">
                         <h2 class="headers" style="font-size: 1.4em;">Contact SPIF</h2>
                         <form class="form-horizontal" role="form" method="post" action="contact.php">
