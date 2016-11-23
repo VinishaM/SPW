@@ -10,7 +10,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 info">
-                        <p>410 Thurston Ave,<br> Cornell University,<br> Ithaca, NY 14850</p>
+                        <p>410 Thurston Ave,<br> Cornell University,<br> Ithaca, NY 14853</p>
                         <p><span class='glyphicon glyphicon-earphone'></span>(607) 272-0600</p>
                         <p><span class='glyphicon glyphicon-envelope'></span>info@sciencenter.org</p>
                     </div>
@@ -26,9 +26,9 @@
                     </div>
                     <div class= "col-lg-4 info">
                         <p>317 Space Sciences,<br>Cornell University,<br> Ithaca, NY 14850</p>
-                        <p><span class='glyphicon glyphicon-earphone'></span>(607)255-3833</p>
+                        <p><span class='glyphicon glyphicon-earphone'></span>(607) 255-3833</p>
                         <p><span class='glyphicon glyphicon-print'></span>(607) 255-9002</p>
-                        <p><span class='glyphicon glyphicon-envelope'></span>saganplanetwalk@gmail.com</p>
+                        <p><span class='glyphicon glyphicon-envelope'></span>SaganPlanetWalk@gmail.com</p>
                     </div>
                 </div>
             </div>

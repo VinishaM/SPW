@@ -225,6 +225,9 @@ footer {
 footer h2 {
     padding-left: 2% !important;
     font-weight: normal;
+    font-size: 30px !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
 }
 footer p {
     font-size: 18px;
