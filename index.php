@@ -10,11 +10,10 @@
         <title>Sagan Planet Walk: Home</title>
         <link href="css/bootstrap.css" rel="stylesheet"><!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--Font Awesome-->
-        <link href='https://fonts.googleapis.com/css?family=Oswald|Cinzel|Raleway' rel='stylesheet' type='text/css'><!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!--Google Fonts-->
         <link rel="stylesheet" type="text/css" href="js/slider/jquery.bxslider.css"/><!--slider CSS-->
         <link href="css/styles.css" rel="stylesheet"><!-- Custom CSS -->
         <link href='3DSolarSys/styles.css' rel='stylesheet'>
-
         <script src="js/jquery.js"></script><!-- jQuery -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsI03Q0s4hteWFhxg1KhrxbR0pFM0TPA0"></script><!--Google Maps-->
         <script src="js/slider/jquery.bxslider.js"></script><!--slider-->
