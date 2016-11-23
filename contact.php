@@ -50,7 +50,6 @@
         <meta name="author" content="">
         <title>Sagan Planet Walk: Home</title>
         <link href="css/bootstrap.css" rel="stylesheet"><!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--Font Awesome-->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!--Google Fonts-->
         <link rel="stylesheet" type="text/css" href="js/slider/jquery.bxslider.css"/><!--slider CSS-->
         <link href="css/styles.css" rel="stylesheet"><!-- Custom CSS -->
@@ -75,32 +74,32 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li><a class="category" href="index.html">Home</a></li>
-                      <li><a class="category" href="sun.html">The Sun</a></li>
+                      <li><a class="category" href="index.php">Home</a></li>
+                      <li><a class="category" href="sun.php">The Sun</a></li>
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle category" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rocky Planets<span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                              <li><a href="mercury.html">Mercury</a></li>
-                              <li><a href="venus.html">Venus</a></li>
-                              <li><a href="earth.html">Earth</a></li>
-                              <li><a href="mars.html">Mars</a></li>
+                              <li><a href="mercury.php">Mercury</a></li>
+                              <li><a href="venus.php">Venus</a></li>
+                              <li><a href="earth.php">Earth</a></li>
+                              <li><a href="mars.php">Mars</a></li>
                           </ul>
                       </li>
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle category" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giant Planets<span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                              <li><a href="jupiter.html">Jupiter</a></li>
-                              <li><a href="saturn.html">Saturn</a></li>
-                              <li><a href="uranus.html">Uranus</a></li>
-                              <li><a href="neptune.html">Neptune</a></li>
+                              <li><a href="jupiter.php">Jupiter</a></li>
+                              <li><a href="saturn.php">Saturn</a></li>
+                              <li><a href="uranus.php">Uranus</a></li>
+                              <li><a href="neptune.php">Neptune</a></li>
                           </ul>
                       </li>
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle category" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Bodies<span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                              <li><a href="pluto.html">Pluto</a></li>
-                              <li><a href="kepler.html">Kepler-37d</a></li>
-                              <li><a href="alphaCentauri.html">Alpha Centauri</a></li>
+                              <li><a href="pluto.php">Pluto</a></li>
+                              <li><a href="kepler.php">Kepler-37d</a></li>
+                              <li><a href="alphaCentauri.php">Alpha Centauri</a></li>
                           </ul>
                       </li>
                       <li><a class=" active category" href="contact.php">Contact</a></li>
