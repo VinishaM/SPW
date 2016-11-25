@@ -11,36 +11,6 @@
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!--Google Fonts-->
         <link rel="stylesheet" type="text/css" href="js/slider/jquery.bxslider.css"/><!--slider CSS-->
         <link href="css/styles.css" rel="stylesheet"><!-- Custom CSS -->
-
-        
-        <script src="js/jquery.js"></script><!-- jQuery -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsI03Q0s4hteWFhxg1KhrxbR0pFM0TPA0"></script><!--Google Maps-->
-        <script src="js/slider/jquery.bxslider.js"></script><!--slider-->
-        <script src="js/basic.js"></script><!-- Custom JS-->
-        <script>             
-          $(window).on('load', function() {
-              $width = window.innerWidth;
-              $min = 0;
-              $max = 0;
-              if ($width < 768) {
-                  $min=6;
-                  $max=9;
-              } else {
-                  $min=12;
-                  $max=15;    
-              }
-              
-              $('.slider8').bxSlider({
-                  mode: 'vertical',
-                  minSlides: $min,
-                  maxSlides: $max,
-                  slideMargin: 20,
-                  responsive: true,
-                  touchEnabled: true
-                });
-          });
-        </script>
-        <script src="js/bootstrap.min.js"></script><!-- Bootstrap Core JavaScript -->
     </head>
     <body id="pages">
         <!--logo holder-->
@@ -112,7 +82,7 @@
                                 </div>
                             </div>
                             <div class='imgCont2'>
-                                <img id="img2" src="images/sunstop.png">
+                                <img id="img2" src="images/sunstop.jpg">
                                 <div class="buttons" id="pushDown">
                                     <button><a href="http://spif.astro.cornell.edu/"><b>Visit SPIF</b></a></button>
                                 </div>
@@ -414,5 +384,34 @@
         
         <!-- Footer -->
         <?php include("footer.html"); ?>
+
+        <script src="js/jquery.js"></script><!-- jQuery -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsI03Q0s4hteWFhxg1KhrxbR0pFM0TPA0"></script><!--Google Maps-->
+        <script src="js/slider/jquery.bxslider.js"></script><!--slider-->
+        <script src="js/basic.js"></script><!-- Custom JS-->
+        <script>             
+          $(window).on('load', function() {
+              $width = window.innerWidth;
+              $min = 0;
+              $max = 0;
+              if ($width < 768) {
+                  $min=6;
+                  $max=9;
+              } else {
+                  $min=12;
+                  $max=15;    
+              }
+              
+              $('.slider8').bxSlider({
+                  mode: 'vertical',
+                  minSlides: $min,
+                  maxSlides: $max,
+                  slideMargin: 20,
+                  responsive: true,
+                  touchEnabled: true
+                });
+          });
+        </script>
+        <script src="js/bootstrap.min.js"></script><!-- Bootstrap Core JavaScript -->
     </body> 
 </html>
